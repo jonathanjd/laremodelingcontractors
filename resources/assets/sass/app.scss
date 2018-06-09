@@ -1,9 +1,29 @@
 $color: #3f93f3;
-$black: #000;
+$black: #333;
 .my-hr {
   background: $color;
   height: 5px;
   width: 10%;
+}
+
+#what-customers-are-saying {
+  background: url('/img/whatcustomersaresaying.png') no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  .what-customers-are-saying-title {
+    color: #fff;
+  }
+  .what-customers-are-saying-body {
+    .what-customers-are-saying-item {
+      margin-top: 30px;
+      color: #fff;
+    }
+    blockquote {
+      font-family: 'Pacifico', cursive;
+    }
+  }
 }
 
 #how-it-works {

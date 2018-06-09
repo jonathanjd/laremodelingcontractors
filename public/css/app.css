@@ -4,6 +4,27 @@
   width: 10%;
 }
 
+#what-customers-are-saying {
+  background: url("/img/whatcustomersaresaying.png") no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+#what-customers-are-saying .what-customers-are-saying-title {
+  color: #fff;
+}
+
+#what-customers-are-saying .what-customers-are-saying-body .what-customers-are-saying-item {
+  margin-top: 30px;
+  color: #fff;
+}
+
+#what-customers-are-saying .what-customers-are-saying-body blockquote {
+  font-family: 'Pacifico', cursive;
+}
+
 #how-it-works {
   margin-top: 30px;
   margin-bottom: 30px;
@@ -24,6 +45,6 @@
 }
 
 #how-it-works .how-it-works-box:hover .fas {
-  color: #000;
+  color: #333;
 }
 

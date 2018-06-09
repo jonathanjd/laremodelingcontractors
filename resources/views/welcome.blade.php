@@ -388,6 +388,10 @@ Angeles') @section('content')
 </section>
 <!-- Collaboration Section End -->
 
+<!-- What Customers Are Saying Start -->
+@include('include.whatcustomersaresaying')
+<!-- What Customers Are Saying End -->
+
 <!-- How It Works Start -->
 @include('include.howitworks');
 <!-- How It Works End -->
