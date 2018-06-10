@@ -12,6 +12,45 @@ $black: #333;
   }
 }
 
+#review-title {
+  .review-title-title {
+    color: $black;
+  }
+  span {
+    color: $color;
+  }
+  margin-bottom: 60px;
+}
+
+#whychoose {
+  background: url('/img/whychoose.png') no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  padding-top: 40px;
+  .my-hr {
+    background: #fff;
+    height: 5px;
+    width: 10%;
+  }
+  .whychoose-title {
+    color: #fff;
+  }
+  .whychoose-body {
+    .whychoose-item {
+      margin-top: 30px;
+      color: #fff;
+    }
+  }
+  .whychoose-mt {
+    margin-top: 30px;
+  }
+  .whychoose-mb {
+    margin-bottom: 30px;
+  }
+}
+
 #what-customers-are-saying {
   background: url('/img/whatcustomersaresaying.png') no-repeat;
   background-size: cover;
@@ -39,7 +78,6 @@ $black: #333;
 }
 
 #how-it-works {
-  margin-top: 30px;
   margin-bottom: 30px;
   .how-it-works-box {
     margin-top: 30px;

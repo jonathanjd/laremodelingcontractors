@@ -8,6 +8,50 @@
   text-transform: uppercase;
 }
 
+#review-title {
+  margin-bottom: 60px;
+}
+
+#review-title .review-title-title {
+  color: #333;
+}
+
+#review-title span {
+  color: #3f93f3;
+}
+
+#whychoose {
+  background: url("/img/whychoose.png") no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  padding-top: 40px;
+}
+
+#whychoose .my-hr {
+  background: #fff;
+  height: 5px;
+  width: 10%;
+}
+
+#whychoose .whychoose-title {
+  color: #fff;
+}
+
+#whychoose .whychoose-body .whychoose-item {
+  margin-top: 30px;
+  color: #fff;
+}
+
+#whychoose .whychoose-mt {
+  margin-top: 30px;
+}
+
+#whychoose .whychoose-mb {
+  margin-bottom: 30px;
+}
+
 #what-customers-are-saying {
   background: url("/img/whatcustomersaresaying.png") no-repeat;
   background-size: cover;
@@ -37,7 +81,6 @@
 }
 
 #how-it-works {
-  margin-top: 30px;
   margin-bottom: 30px;
 }
 

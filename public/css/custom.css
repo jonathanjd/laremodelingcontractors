@@ -402,13 +402,13 @@ Author URI : http://www.markups.io/
 
 .custom-navbar li:hover {
     /*background-color: #4087ab;*/
-    border-top: solid 2px #9e9e9e;
-    color: #9e9e9e !important;
+    border-top: solid 2px #3f93f3;
+    color: #3f93f3 !important;
 }
 
 .custom-navbar a:hover {
     background-color: transparent !important;
-    color: #9e9e9e !important;
+    color: #3f93f3 !important;
 }
 
 .custom-navbar a:focus {
@@ -15900,7 +15900,7 @@ button.close {
     padding: 10px;
     font-family: "Open Sans", Arial, Helvetica, sans-serif;
     font-weight: bold;
-    color: #8b0707;
+    color: #3f93f3;
 }
 
 .phone-style p {
@@ -15909,7 +15909,7 @@ button.close {
 
 .phone-style p>a {
     font-size: 40px !important;
-    color: #8b0707 !important;
+    color: #3f93f3 !important;
     text-decoration: none;
     cursor: pointer;
 }

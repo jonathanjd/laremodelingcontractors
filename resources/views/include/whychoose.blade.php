@@ -1,34 +1,38 @@
-<section id="what-customers-are-saying">
+<section id="whychoose">
   <div class="container">
     <div class="row">
-      <div class="col-sm-12 what-customers-are-saying-title">
-        <h1 class="text-center">What Customers Are Saying</h1>
+      <div class="col-sm-12 whychoose-title">
+        <h1 class="text-center">Why Choose Angie's List</h1>
         <hr class="my-hr">
       </div>
-      <div class="what-customers-are-saying-body">
-        <div class="col-sm-4 what-customers-are-saying-item">
+      <div class="whychoose-body">
+        <div class="col-sm-3 whychoose-item">
           <p class="text-center">
-            <img src="{{ asset('img/customer1.png') }}" class="image-responsive" alt="">
+            <i class="fas fa-comments fa-5x"></i>
           </p>
-          <p class="text-uppercase text-center">Glen Friesen</p>
-          <blockquote>With a heavy focus on collecting and analyzing data, [ClearSlide] can help organizations that are looking for a robust analytical tool and consider content management a key concern.
-          </blockquote>
+          <p class="whychoose-mt">A laborum enim earum expedita. Consequatur fugit quia. Omnis inventore vitae modi possimus alias sed esse dolor.</p>
+          <p class="whychoose-mb">A laborum enim earum expedita. Consequatur fugit quia. Omnis inventore vitae modi possimus alias sed esse dolor.</p>
         </div>
-        <div class="col-sm-4 what-customers-are-saying-item">
+        <div class="col-sm-3 whychoose-item">
           <p class="text-center">
-            <img src="{{ asset('img/customer2.png') }}" class="image-responsive" alt="">
+            <i class="fas fa-user-shield fa-5x"></i>
           </p>
-          <p class="text-uppercase text-center">Kiel Zieme</p>
-          <blockquote>Because of the ClearSlide technology, each content delivery and content view is a transactional event that can be captured, aggregated, and analyzed.
-          </blockquote>
+          <p class="whychoose-mt">A laborum enim earum expedita. Consequatur fugit quia. Omnis inventore vitae modi possimus alias sed esse dolor.</p>
+          <p class="whychoose-mb">A laborum enim earum expedita. Consequatur fugit quia. Omnis inventore vitae modi possimus alias sed esse dolor.</p>
         </div>
-        <div class="col-sm-4 what-customers-are-saying-item">
+        <div class="col-sm-3 whychoose-item">
           <p class="text-center">
-            <img src="{{ asset('img/customer3.png') }}" class="image-responsive" alt="">
+            <i class="fas fa-phone fa-5x"></i>
           </p>
-          <p class="text-uppercase text-center">Champlin Freida</p>
-          <blockquote>Sales coaches will be able to lead more reps and provide more focused and valuable coaching through the use of automated sales analytics from companies like ClearSlide..
-          </blockquote>
+          <p class="whychoose-mt">A laborum enim earum expedita. Consequatur fugit quia. Omnis inventore vitae modi possimus alias sed esse dolor.</p>
+          <p class="whychoose-mb">A laborum enim earum expedita. Consequatur fugit quia. Omnis inventore vitae modi possimus alias sed esse dolor.</p>
+        </div>
+        <div class="col-sm-3 whychoose-item">
+          <p class="text-center">
+           <i class="fas fa-check-circle fa-5x"></i>
+          </p>
+          <p class="whychoose-mt">A laborum enim earum expedita. Consequatur fugit quia. Omnis inventore vitae modi possimus alias sed esse dolor.</p>
+          <p class="whychoose-mb">A laborum enim earum expedita. Consequatur fugit quia. Omnis inventore vitae modi possimus alias sed esse dolor.</p>
         </div>
       </div>
     </div>
