@@ -13,7 +13,9 @@
     <meta name="author" content="">
     <!-- Styles -->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.6-rc.0/css/select2.min.css" rel="stylesheet" />
     <link rel="stylesheet" href="{{ asset('css/bootstrap.min.css') }}">
+    <link href="{{ asset('css/my-style.css') }}" rel="stylesheet">
     <link href="{{ asset('css/custom.css') }}" rel="stylesheet">
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
     <link href="{{ asset('css/jquery.fancybox.css') }}" rel="stylesheet">
@@ -44,6 +46,8 @@
         <script src="{{ asset('js/jquery.js') }}"></script>
         <script src="{{ asset('js/bootstrap.min.js') }}"></script>
         <script src="{{ asset('js/jquery.fancybox.js') }}"></script>
+        <script src="{{ asset('js/my-script.js') }}"></script>
+
     </div>
 </body>
 

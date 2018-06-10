@@ -388,9 +388,18 @@ Angeles') @section('content')
 </section>
 <!-- Collaboration Section End -->
 
+<!-- Do It YourSelf Start -->
+@include('include.serviceestimates')
+<!-- Do It YourSelf End -->
+
+
 <!-- What Customers Are Saying Start -->
 @include('include.whatcustomersaresaying')
 <!-- What Customers Are Saying End -->
+
+<!-- Do It YourSelf Start -->
+@include('include.doityourself')
+<!-- Do It YourSelf End -->
 
 <!-- How It Works Start -->
 @include('include.howitworks');

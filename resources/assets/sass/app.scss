@@ -6,12 +6,24 @@ $black: #333;
   width: 10%;
 }
 
+#doityourself {
+  a {
+    text-transform: uppercase
+  }
+}
+
 #what-customers-are-saying {
   background: url('/img/whatcustomersaresaying.png') no-repeat;
   background-size: cover;
   background-attachment: fixed;
   margin-top: 30px;
   margin-bottom: 30px;
+  padding-top: 40px;
+  .my-hr {
+    background: #fff;
+    height: 5px;
+    width: 10%;
+  }
   .what-customers-are-saying-title {
     color: #fff;
   }

@@ -10,7 +10,7 @@
       <div class="col-sm-3">
         <div class="how-it-works-box">
           <div class="how-it-works-box-header">
-            <p class="text-center"><i class="fas fa-user-md fa-8x"></i></i></p>
+            <p class="text-center"><i class="fas fa-user-md fa-6x"></i></i></p>
           </div>
           <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Accusamus suscipit corrupti quos laudantium quasi labore repellendus voluptas voluptatem voluptates sed harum rem nihil dolores, architecto aut. Dolores ab obcaecati voluptate?</p>
         </div>
@@ -18,7 +18,7 @@
       <div class="col-sm-3">
         <div class="how-it-works-box">
           <div class="how-it-works-box-header">
-            <p class="text-center"><i class="fas fa-search fa-8x"></i></p>
+            <p class="text-center"><i class="fas fa-search fa-6x"></i></p>
           </div>
           <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Accusamus suscipit corrupti quos laudantium quasi labore repellendus voluptas voluptatem voluptates sed harum rem nihil dolores, architecto aut. Dolores ab obcaecati voluptate?</p>
         </div>
@@ -26,7 +26,7 @@
       <div class="col-sm-3">
         <div class="how-it-works-box">
           <div class="how-it-works-box-header">
-            <p class="text-center"><i class="fas fa-users fa-8x"></i></p>
+            <p class="text-center"><i class="fas fa-users fa-6x"></i></p>
           </div>
           <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Accusamus suscipit corrupti quos laudantium quasi labore repellendus voluptas voluptatem voluptates sed harum rem nihil dolores, architecto aut. Dolores ab obcaecati voluptate?</p>
         </div>
@@ -34,7 +34,7 @@
       <div class="col-sm-3">
         <div class="how-it-works-box">
           <div class="how-it-works-box-header">
-            <p class="text-center"><i class="fas fa-hands-helping fa-8x"></i></p>
+            <p class="text-center"><i class="fas fa-hands-helping fa-6x"></i></p>
           </div>
           <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Accusamus suscipit corrupti quos laudantium quasi labore repellendus voluptas voluptatem voluptates sed harum rem nihil dolores, architecto aut. Dolores ab obcaecati voluptate?</p>
         </div>

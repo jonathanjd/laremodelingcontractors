@@ -16287,3 +16287,161 @@ div.contact-form-galleries {
     object-position: center;
     margin: 10px 0;
 }
+
+#doityourself {
+    background: #fff;
+    padding-bottom: 89px;
+    padding-top: 81px;
+    text-align: center
+}
+
+#doityourself>.container {
+    -moz-transition: all .25s ease;
+    transition: all .25s ease;
+    font-size: 0;
+    text-align: left
+}
+
+#doityourself .opacity {
+    max-height: 0;
+    opacity: 0;
+    overflow: hidden;
+    filter: alpha(opacity=0);
+    -ms-filter: "alpha(opacity=0)"
+}
+
+#doityourself ul {
+    list-style: none;
+    margin-bottom: 0;
+    padding-left: 0
+}
+
+#doityourself li {
+    margin-bottom: 1px
+}
+
+#doityourself img.icon {
+    visibility: hidden
+}
+
+#doityourself .icon {
+    display: inline-block;
+    *zoom: 1;
+    *display: inline;
+    fill: #3f93f3;
+    height: 40px;
+    margin-right: 5px;
+    vertical-align: middle;
+    width: 40px
+}
+
+#doityourself ul a {
+    -moz-transition: background .15s ease;
+    transition: background .15s ease;
+    display: block;
+    min-height: 50px;
+    line-height: 1.2;
+    padding: 12px 5px;
+    position: relative
+}
+
+#doityourself a .arrow {
+    fill: #757575;
+    stroke: #fff;
+    stroke-width: .5px;
+    height: 18px;
+    margin-top: -9.5px;
+    position: absolute;
+    right: 5px;
+    top: 50%;
+    width: 12px
+}
+
+#doityourself .accordion-title.active {
+    cursor: default
+}
+
+@media(max-width:991px) {
+    #doityourself ul a {
+        font-size: 16px
+    }
+    #doityourself .accordion-float .nav,
+    #doityourself .accordion-title.active+.nav {
+        display: none !important
+    }
+}
+
+@media(max-width:767px) {
+    #doityourself ul a {
+        padding: 6px 5px
+    }
+}
+
+@media(min-width:480px) and (max-width:991px) {
+    #doityourself li {
+        display: inline-block;
+        *zoom: 1;
+        *display: inline;
+        width: 50%;
+        vertical-align: top
+    }
+}
+
+@media(min-width:768px) {
+    #doityourself ul a {
+        padding: 5px
+    }
+    #doityourself a .arrow {
+        display: none
+    }
+}
+
+@media(min-width:992px) {
+    #doityourself ul {
+        display: inline-block;
+        *zoom: 1;
+        *display: inline;
+        padding-left: 27px;
+        padding-right: 27px;
+        vertical-align: top;
+        width: 33.3334%
+    }
+    #doityourself ul:first-child {
+        padding-left: 0
+    }
+    #doityourself ul:last-child {
+        padding-right: 0
+    }
+    #doityourself a {
+        font-size: 20px
+    }
+    #doityourself .accordion-title.active {
+        background: #3f93f3;
+        border-radius: 3px 3px 0 0;
+        color: #fff
+    }
+    #doityourself .accordion-title.active .icon {
+        fill: #fff
+    }
+    #doityourself .accordion-float .nav {
+        border: 1px solid #3f93f3;
+        overflow-y: auto;
+        max-height: 228px
+    }
+    #doityourself .accordion-float .nav li {
+        margin-bottom: 0
+    }
+    #doityourself .accordion-float .nav a {
+        font-size: 16px;
+        line-height: 1.5;
+        min-height: auto;
+        padding: 0
+    }
+    #doityourself .accordion-float ul {
+        width: auto
+    }
+}
+
+#doityourself .btn {
+    margin-top: 49px
+}
