@@ -4,8 +4,8 @@ Angeles') @section('content')
 <!-- Toolbar Call Us Today Start -->
 <div class="background-nopadding" style="background: #333">
   <div class="container">
-    <p>Call Us Today! 1-323-894-9224 |
-      <a>info@fititall.co</a>
+    <p>
+      <a href="#">Contractors Registration</a>
     </p>
   </div>
 </div>

@@ -11,7 +11,7 @@
             <img src="{{ asset('img/customer1.png') }}" class="image-responsive" alt="">
           </p>
           <p class="text-uppercase text-center">Glen Friesen</p>
-          <blockquote>With a heavy focus on collecting and analyzing data, [ClearSlide] can help organizations that are looking for a robust analytical tool and consider content management a key concern.
+          <blockquote>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere laborum, fuga.
           </blockquote>
         </div>
         <div class="col-sm-4 what-customers-are-saying-item">
@@ -19,7 +19,7 @@
             <img src="{{ asset('img/customer2.png') }}" class="image-responsive" alt="">
           </p>
           <p class="text-uppercase text-center">Kiel Zieme</p>
-          <blockquote>Because of the ClearSlide technology, each content delivery and content view is a transactional event that can be captured, aggregated, and analyzed.
+          <blockquote>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere laborum, fuga.
           </blockquote>
         </div>
         <div class="col-sm-4 what-customers-are-saying-item">
@@ -27,7 +27,7 @@
             <img src="{{ asset('img/customer3.png') }}" class="image-responsive" alt="">
           </p>
           <p class="text-uppercase text-center">Champlin Freida</p>
-          <blockquote>Sales coaches will be able to lead more reps and provide more focused and valuable coaching through the use of automated sales analytics from companies like ClearSlide..
+          <blockquote>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere laborum, fuga.
           </blockquote>
         </div>
       </div>

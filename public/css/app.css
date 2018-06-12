@@ -1,19 +1,46 @@
+.navbar .navbar-nav {
+  display: inline-block;
+  float: none;
+}
+
+.navbar .navbar-collapse {
+  text-align: center;
+}
+
 .my-hr {
   background: #3f93f3;
   height: 5px;
   width: 10%;
 }
 
+#serviceestimates {
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
+#doityourself {
+  padding-top: 0;
+}
+
 #doityourself a {
   text-transform: uppercase;
 }
 
-#review-title {
-  margin-bottom: 60px;
-}
-
 #review-title .review-title-title {
   color: #333;
+}
+
+#review-title .my-barra {
+  border-right: 3px solid #3f93f3;
+}
+
+#review-title .my-boxshadow {
+  cursor: pointer;
+}
+
+#review-title .my-boxshadow:hover {
+  -webkit-box-shadow: 0 0 0 0, 0 4px 20px 0 #c6c6c6;
+          box-shadow: 0 0 0 0, 0 4px 20px 0 #c6c6c6;
 }
 
 #review-title span {
@@ -24,7 +51,6 @@
   background: url("/img/whychoose.png") no-repeat;
   background-size: cover;
   background-attachment: fixed;
-  margin-top: 30px;
   margin-bottom: 30px;
   padding-top: 40px;
 }
@@ -42,6 +68,12 @@
 #whychoose .whychoose-body .whychoose-item {
   margin-top: 30px;
   color: #fff;
+  padding-left: 0;
+  padding-left: 0;
+}
+
+#whychoose .whychoose-body .whychoose-item .my-text-size {
+  font-size: 18px;
 }
 
 #whychoose .whychoose-mt {
@@ -80,10 +112,6 @@
   font-family: 'Pacifico', cursive;
 }
 
-#how-it-works {
-  margin-bottom: 30px;
-}
-
 #how-it-works .how-it-works-box {
   margin-top: 30px;
 }
@@ -100,5 +128,17 @@
 
 #how-it-works .how-it-works-box:hover .fas {
   color: #333;
+}
+
+#blog {
+  padding-top: 0;
+}
+
+#blog .title-blog a {
+  text-decoration: none;
+}
+
+#blog .title-blog a h1:hover {
+  color: #3f93f3;
 }
 

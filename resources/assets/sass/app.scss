@@ -1,12 +1,27 @@
 $color: #3f93f3;
 $black: #333;
+.navbar .navbar-nav {
+  display: inline-block;
+  float: none;
+}
+
+.navbar .navbar-collapse {
+  text-align: center;
+}
+
 .my-hr {
   background: $color;
   height: 5px;
   width: 10%;
 }
 
+#serviceestimates {
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
 #doityourself {
+  padding-top: 0;
   a {
     text-transform: uppercase
   }
@@ -16,17 +31,24 @@ $black: #333;
   .review-title-title {
     color: $black;
   }
+  .my-barra {
+    border-right: 3px solid $color;
+  }
+  .my-boxshadow {
+    cursor: pointer;
+    &:hover {
+      box-shadow: 0 0 0 0, 0 4px 20px 0 #c6c6c6;
+    }
+  }
   span {
     color: $color;
   }
-  margin-bottom: 60px;
 }
 
 #whychoose {
   background: url('/img/whychoose.png') no-repeat;
   background-size: cover;
   background-attachment: fixed;
-  margin-top: 30px;
   margin-bottom: 30px;
   padding-top: 40px;
   .my-hr {
@@ -41,6 +63,11 @@ $black: #333;
     .whychoose-item {
       margin-top: 30px;
       color: #fff;
+      padding-left: 0;
+      padding-left: 0;
+      .my-text-size {
+        font-size: 18px;
+      }
     }
   }
   .whychoose-mt {
@@ -78,7 +105,6 @@ $black: #333;
 }
 
 #how-it-works {
-  margin-bottom: 30px;
   .how-it-works-box {
     margin-top: 30px;
     .how-it-works-box-header {
@@ -91,6 +117,20 @@ $black: #333;
       cursor: pointer;
       .fas {
         color: $black;
+      }
+    }
+  }
+}
+
+#blog {
+  padding-top: 0;
+  .title-blog {
+    a {
+      text-decoration: none;
+      h1 {
+        &:hover {
+          color: $color;
+        }
       }
     }
   }
