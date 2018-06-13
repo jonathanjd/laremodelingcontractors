@@ -126,6 +126,7 @@ class ArticleController extends Controller
     {
         //
         $article = Article::find($id);
+        $article->delete();
         return redirect()->route('article.index')->with('flash', 'Article Deleted');
     }
 }
