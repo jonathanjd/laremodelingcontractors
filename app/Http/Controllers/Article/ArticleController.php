@@ -4,6 +4,7 @@ namespace App\Http\Controllers\Article;
 
 use App\Article;
 use App\Category;
+use Carbon\Carbon;
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
 
@@ -46,11 +47,11 @@ class ArticleController extends Controller
         if ($request->file('file')) {
             # code...
             $file = $request->file('file');
-            $name = time() . ' ' . $file->getClientOriginalExtension();
-            $path = public_path() . '/img/articles/';
+            $name = $file->getClientOriginalName() . '-' . time() . '.' . $file->getClientOriginalExtension();
+            $path = public_path('img/articles/');
             $file->move($path, $name);
         } else {
-            $path = public_path() . '/img/articles/';
+            $path = public_path('img/articles/');
             $name = 'image-default.jpg';
         }
 

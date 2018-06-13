@@ -42,7 +42,7 @@
 
           <div class="form-group">
               <label for="file">Select a File</label>
-              <input type="file">
+              <input type="file" name="file">
           </div>
 
           <div class="form-group">
@@ -81,11 +81,11 @@
         </div>
         <!-- /.box-body -->
         <div class="box-footer">
-          <button type="submit" class="btn btn-primary">Save</button>
+          <button type="submit" class="btn btn-success btn-block">Save</button>
         </div>
       </form>
     </div>
-    <a href="{{ route('category.index') }}" class="btn btn-primary btn-block">Back</a>
+    <a href="{{ route('article.index') }}" class="btn btn-primary btn-block">Back</a>
   </div>
 </div>
 @endsection
