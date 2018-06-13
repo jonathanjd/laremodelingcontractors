@@ -3,7 +3,7 @@
 @if (Session::has('flash'))
   @include('admin.include.alert', ['type' => 'alert-success', 'message' => Session::get('flash')])
 @endif
-<h1>Category</h1>
+<h1>Article</h1>
 @endsection
 
 @section('content')
@@ -26,13 +26,19 @@
                   <tr>
                   <th class="text-center">ID</th>
                   <th class="text-center">Title</th>
+                  <th class="text-center">Author</th>
+                  <th class="text-center">Status</th>
                   <th class="text-center">Date</th>
                   <th></th>
                 </tr>
+
                 @foreach ($articles as $article)
+
                   <tr>
                     <td class="text-center">{{ $article->id }}</td>
                     <td class="text-center">{{ $article->title }}</td>
+                    <td class="text-center">{{ $article->user->name }}</td>
+                    <td class="text-center text-uppercase">{{ $article->status }}</td>
                     <td class="text-center">{{ $article->created_at->diffForHumans() }}</td>
                     <td class="text-center"><a href="#" class="btn btn-info">Show</a></td>
                     <td class="text-center"><a href="#" class="btn btn-warning">Edit</a></td>
