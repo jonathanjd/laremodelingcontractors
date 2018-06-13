@@ -7,7 +7,7 @@
 
   <div class="row">
     <div class="col-md-4">
-      <a href="#">
+      <a href="{{ route('category.index') }}">
         <div class="info-box">
 
           <span class="info-box-icon bg-aqua">
@@ -22,7 +22,7 @@
       </a>
     </div>
     <div class="col-md-4">
-      <a href="#">
+      <a href="{{ route('article.index') }}">
         <div class="info-box">
           <span class="info-box-icon bg-navy">
             <i class="fa fa-pencil"></i>

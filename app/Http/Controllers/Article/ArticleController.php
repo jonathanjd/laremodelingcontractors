@@ -43,6 +43,7 @@ class ArticleController extends Controller
     public function store(Request $request)
     {
         //validation request
+        //dd($request->all());
         $this->validate($request, [
             'title' => 'required|min:2|max:255',
             'permalink' => 'max:255',
@@ -62,7 +63,7 @@ class ArticleController extends Controller
             $file->move($path, $name);
         } else {
             $path = public_path('img/articles/');
-            $name = 'image-default.jpg';
+            $name = 'default-image.png';
         }
 
         $article = new Article();

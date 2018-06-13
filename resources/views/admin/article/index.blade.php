@@ -27,6 +27,7 @@
                   <th class="text-center">ID</th>
                   <th class="text-center">Title</th>
                   <th class="text-center">Author</th>
+                  <th class="text-center">Category</th>
                   <th class="text-center">Status</th>
                   <th class="text-center">Date</th>
                   <th></th>
@@ -37,6 +38,7 @@
                     <td class="text-center">{{ $article->id }}</td>
                     <td class="text-center">{{ $article->title }}</td>
                     <td class="text-center">{{ $article->user->name }}</td>
+                    <td class="text-center">{{ $article->categories[0]->name }}</td>
                     <td class="text-center text-uppercase">{{ $article->status }}</td>
                     <td class="text-center">{{ $article->created_at->diffForHumans() }}</td>
                     <td class="text-center"><a href="{{ route('article.show', $article) }}" class="btn btn-info">Show</a></td>
