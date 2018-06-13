@@ -21,7 +21,7 @@
 
         <li><a href="{{ route('dashboard') }}"><i class="fa fa-dashboard"></i> <span>Dashboard</span></a></li>
         <li><a href="{{ route('category.index') }}"><i class="fa fa-bookmark"></i> <span>Category</span></a></li>
-        <li><a href="{{ route('dashboard') }}"><i class="fa fa-pencil"></i> <span>Article</span></a></li>
+        <li><a href="{{ route('article.index') }}"><i class="fa fa-pencil"></i> <span>Article</span></a></li>
         <li><a href="{{ route('dashboard') }}"><i class="fa fa-user"></i> <span>User</span></a></li>
 
         <li class="header">OPTIONS</li>

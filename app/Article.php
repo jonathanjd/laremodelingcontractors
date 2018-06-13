@@ -21,4 +21,9 @@ class Article extends Model
         'user_id',
         'deleted_by'
     ];
+
+    public function user()
+    {
+        return $this->belongsTo(User::class);
+    }
 }
