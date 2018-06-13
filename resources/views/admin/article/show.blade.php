@@ -20,7 +20,11 @@
             <!-- /.box-header -->
             <div class="box-body table-responsive no-padding">
               <div class="col-md-12">
-                <img class="img-responsive center-block img-thumbnail" height="300" width="300" src="{{ asset('img/articles/' . $article->img_name) }}" alt="{{ $article->img_name }}">
+                @if ($article->img_name === null)
+                  <img class="img-responsive center-block img-thumbnail" height="300" width="300" src="{{ asset('img/articles/default-image.png') }}" alt="default-image">
+                @else
+                  <img class="img-responsive center-block img-thumbnail" height="300" width="300" src="{{ asset('img/articles/' . $article->img_name) }}" alt="{{ $article->img_name }}">
+                @endif
 
               <h3 class="text-center">{{ $article->title }}</h3>
 
@@ -37,6 +41,7 @@
                 <p><strong>Seo Title:</strong> {{ $article->seo_title }}</p>
                 <p><strong>SEO Description:</strong> {{ $article->seo_description }}</p>
                 <p><strong>Keywords:</strong> {{ $article->keywords }}</p>
+                <p><strong>Permalink:</strong> {{ $article->permalink }}</p>
               </div>
             </div>
             <!-- /.box-body -->
