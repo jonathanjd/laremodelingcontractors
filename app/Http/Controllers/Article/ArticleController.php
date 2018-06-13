@@ -69,7 +69,7 @@ class ArticleController extends Controller
         $article->save();
         $article->categories()->sync($request->category);
 
-        return redirect()->route('article.index')->with('flash', 'Category Saved');
+        return redirect()->route('article.index')->with('flash', 'Article Saved');
     }
 
     /**
@@ -108,6 +108,14 @@ class ArticleController extends Controller
         //
     }
 
+    public function delete($id)
+    {
+        # code...
+        $article = Article::find($id);
+        return view('admin.article.delete')->with('article', $article);
+    }
+
+
     /**
      * Remove the specified resource from storage.
      *
@@ -117,5 +125,7 @@ class ArticleController extends Controller
     public function destroy($id)
     {
         //
+        $article = Article::find($id);
+        return redirect()->route('article.index')->with('flash', 'Article Deleted');
     }
 }

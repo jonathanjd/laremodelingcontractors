@@ -33,16 +33,15 @@
                 </tr>
 
                 @foreach ($articles as $article)
-
                   <tr>
                     <td class="text-center">{{ $article->id }}</td>
                     <td class="text-center">{{ $article->title }}</td>
                     <td class="text-center">{{ $article->user->name }}</td>
                     <td class="text-center text-uppercase">{{ $article->status }}</td>
                     <td class="text-center">{{ $article->created_at->diffForHumans() }}</td>
-                  <td class="text-center"><a href="{{ route('article.show', $article) }}" class="btn btn-info">Show</a></td>
-                    <td class="text-center"><a href="#" class="btn btn-warning">Edit</a></td>
-                    <td class="text-center"><a href="#" class="btn btn-danger">Delete</a></td>
+                    <td class="text-center"><a href="{{ route('article.show', $article) }}" class="btn btn-info">Show</a></td>
+                    <td class="text-center"><a href="{{ route('article.edit', $article) }}" class="btn btn-warning">Edit</a></td>
+                    <td class="text-center"><a href="{{ route('article.delete', $article) }}" class="btn btn-danger">Delete</a></td>
                   </tr>
                 @endforeach
               </tbody></table>

@@ -20,5 +20,6 @@ Auth::routes();
 Route::group(['prefix' => 'admin'], function () {
     Route::get('/dashboard', 'AdminController@dashboard')->name('dashboard');
     Route::resource('category', 'Category\CategoryController', ['only' => ['index', 'create', 'edit', 'store', 'update']]);
-    Route::resource('article', 'Article\ArticleController', ['only' => ['index', 'create', 'edit', 'show', 'store', 'update']]);
+    Route::get('article/delete/{id}', 'Article\ArticleController@delete')->name('article.delete');
+    Route::resource('article', 'Article\ArticleController', ['only' => ['index', 'create', 'edit', 'show', 'store', 'update', 'destroy']]);
 });
