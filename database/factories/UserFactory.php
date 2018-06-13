@@ -21,3 +21,13 @@ $factory->define(App\Category::class, function (Faker $faker) {
         'permalink' => str_slug($word),
     ];
 });
+
+$factory->define(App\Article::class, function (Faker $faker) {
+    $word = $faker->sentence(3);
+    return [
+        'title' => $word,
+        'permalink' => str_slug($word),
+        'body' => $faker->text(200),
+        'user_id' => 1
+    ];
+});
