@@ -17,8 +17,9 @@
       @else
         <img class="img-responsive center-block img-thumbnail" height="300" width="300" src="{{ asset('img/articles/' . $article->img_name) }}" alt="{{ $article->img_name }}">
       @endif
-      <form action="{{ route('article.store') }}" method="post" enctype="multipart/form-data">
+      <form action="{{ route('article.update', $article) }}" method="post" enctype="multipart/form-data">
         {{ csrf_field() }}
+        {{ method_field('PUT') }}
         <div class="box-body">
           <div class="form-group {{ $errors->has('title') ? 'has-error': '' }}">
             <label for="title">Title</label>

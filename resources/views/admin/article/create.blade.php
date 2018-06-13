@@ -17,7 +17,7 @@
         <div class="box-body">
           <div class="form-group {{ $errors->has('title') ? 'has-error': '' }}">
             <label for="title">Title</label>
-            <input name="title" type="text" class="form-control" placeholder="Title 6-10 Words">
+            <input name="title" type="text" class="form-control" placeholder="Title 6-10 Words" value="{{ old('title') }}">
             @if ($errors->first('title'))
               <span class="help-block">{{ $errors->first('title') }}</>
             @endif
@@ -25,7 +25,7 @@
 
           <div class="form-group {{ $errors->has('permalink') ? 'has-error': '' }}">
             <label for="permalink">Permalink</label>
-            <input name="permalink" type="text" class="form-control" placeholder="Title 6-10 Words">
+            <input name="permalink" type="text" class="form-control" placeholder="Title 6-10 Words" value="{{ old('permalink') }}">
             @if ($errors->first('permalink'))
             <span class="help-block">{{ $errors->first('permalink') }}</span>
             @endif
@@ -34,6 +34,7 @@
           <div class="form-group {{ $errors->has('body') ? 'has-error': '' }}">
             <label for="">Body</label>
             <textarea id="body" name="body" rows="10" cols="80">
+              {{ Request::old('body') }}
             </textarea>
             @if ($errors->first('permalink'))
             <span class="help-block">{{ $errors->first('body') }}</span>
@@ -56,14 +57,17 @@
 
           <div class="form-group {{ $errors->has('seo_title') ? 'has-error': '' }}">
             <label for="seo_title">Seo Title</label>
-            <input name="seo_title" type="text" class="form-control" placeholder="Seo Title 8-12 Words(Palabras Claves)">
+            <input name="seo_title" type="text" class="form-control" placeholder="Seo Title 8-12 Words(Palabras Claves)" value="{{ old('seo_title') }}">
             @if ($errors->first('seo_title'))
             <span class="help-block">{{ $errors->first('seo_title') }}</span>
             @endif
           </div>
+
           <div class="form-group {{ $errors->has('seo_description') ? 'has-error': '' }}">
             <label for="seo_description">Seo Description</label>
-            <textarea name="seo_description" cols="10" rows="5" class="form-control" placeholder="Seo Description Hasta 30 Words(1 o 2 Frases)(Palabras Claves)"></textarea>
+            <textarea name="seo_description" cols="10" rows="5" class="form-control" placeholder="Seo Description Hasta 30 Words(1 o 2 Frases)(Palabras Claves)">
+              {{ Request::old('seo_description') }}
+            </textarea>
             @if ($errors->first('seo_description'))
             <span class="help-block">{{ $errors->first('seo_description') }}</span>
             @endif
@@ -71,7 +75,7 @@
 
           <div class="form-group {{ $errors->has('keywords') ? 'has-error': '' }}">
             <label for="keywords">Seo Keywords</label>
-            <input name="keywords" type="text" class="form-control" placeholder="Seo Keywords(3-4 Words)">
+            <input name="keywords" type="text" class="form-control" placeholder="Seo Keywords(3-4 Words)" value="{{ old('keywords') }}">
             @if ($errors->first('keywords'))
             <span class="help-block">{{ $errors->first('keywords') }}</span>
             @endif

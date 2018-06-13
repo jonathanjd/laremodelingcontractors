@@ -42,7 +42,17 @@ class ArticleController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        //validation request
+        $this->validate($request, [
+            'title' => 'required|min:2|max:255',
+            'permalink' => 'max:255',
+            'body' => 'required',
+            'file' => 'image|mimes:jpeg,png,jpg,gif,svg|max:2048',
+            'category' => 'required',
+            'seo_title' => 'required|min:2|max:255',
+            'seo_description' => 'required',
+            'keywords' => 'required',
+        ]);
 
         if ($request->file('file')) {
             # code...
@@ -109,6 +119,41 @@ class ArticleController extends Controller
     public function update(Request $request, $id)
     {
         //
+        if ($request->file('file')) {
+            # code...
+            $file = $request->file('file');
+            $name = $file->getClientOriginalName() . '-' . time() . '.' . $file->getClientOriginalExtension();
+            $path = public_path('img/articles/');
+            $file->move($path, $name);
+            $article = Article::find($id);
+            $article->title = $request->title;
+            $article->permalink = $request->permalink != null ? $request->permalink : str_slug($request->title);
+            $article->body = $request->body;
+            $article->seo_title = $request->seo_title;
+            $article->seo_description = $request->seo_description;
+            $article->img_url = $path;
+            $article->img_name = $name;
+            $article->keywords = $request->keywords;
+            $article->status = 'preview';
+            $article->user_id = auth()->user()->id;
+            $article->save();
+            $article->categories()->sync($request->category);
+        } else {
+            $article = Article::find($id);
+            $article->title = $request->title;
+            $article->permalink = $request->permalink != null ? $request->permalink : str_slug($request->title);
+            $article->body = $request->body;
+            $article->seo_title = $request->seo_title;
+            $article->seo_description = $request->seo_description;
+            $article->keywords = $request->keywords;
+            $article->status = 'preview';
+            $article->user_id = auth()->user()->id;
+            $article->save();
+            $article->categories()->sync($request->category);
+        }
+
+        return redirect()->route('article.show', $article)->with('flash', 'Article Updated');
+
     }
 
     public function delete($id)

@@ -31,6 +31,7 @@
               {!! $article->body !!}
 
               </div>
+
               <div class="col-md-6">
                 <p><strong>Wrote by: </strong>{{ $article->user->name }}</p>
               </div>
@@ -38,6 +39,7 @@
                 <p><strong>Created at: </strong>{{ $article->created_at->diffForHumans() }}</p>
               </div>
               <div class="col-md-12">
+                <p><strong>Category:</strong> {{ $article->categories[0]->name }}</p>
                 <p><strong>Seo Title:</strong> {{ $article->seo_title }}</p>
                 <p><strong>SEO Description:</strong> {{ $article->seo_description }}</p>
                 <p><strong>Keywords:</strong> {{ $article->keywords }}</p>
