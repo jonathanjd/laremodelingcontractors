@@ -94,6 +94,9 @@ class ArticleController extends Controller
     public function edit($id)
     {
         //
+        $article = Article::find($id);
+        $categories = Category::all();
+        return view('admin.article.edit')->with('article', $article)->with('categories', $categories);
     }
 
     /**
