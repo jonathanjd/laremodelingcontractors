@@ -65,6 +65,7 @@
     <script src="{{ asset('adminLTE/js/fastclick.js') }}"></script>
     <script src="{{ asset('adminLTE/js/jquery.slimscroll.min.js') }}"></script>
     <script src="{{ asset('adminLTE/js/adminlte.min.js') }}"></script>
+    @yield('script')
 </body>
 
 </html>

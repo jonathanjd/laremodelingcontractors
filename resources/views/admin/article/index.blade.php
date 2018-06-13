@@ -9,7 +9,7 @@
 @section('content')
   <div class="row">
     <div class="col-md-12">
-      <a href="#" class="btn btn-success pull-right">Create Article</a>
+      <a href="{{ route('article.create') }}" class="btn btn-success pull-right">Create Article</a>
     </div>
   </div>
   <br>
