@@ -8,7 +8,7 @@
 }
 
 .my-hr {
-  background: #3f93f3;
+  background: #D9CC17;
   height: 5px;
   width: 10%;
 }
@@ -31,7 +31,7 @@
 }
 
 #review-title .my-barra {
-  border-right: 3px solid #3f93f3;
+  border-right: 3px solid #D9CC17;
 }
 
 #review-title .my-boxshadow {
@@ -39,12 +39,13 @@
 }
 
 #review-title .my-boxshadow:hover {
+  background: #CFD6D4;
   -webkit-box-shadow: 0 0 0 0, 0 4px 20px 0 #c6c6c6;
           box-shadow: 0 0 0 0, 0 4px 20px 0 #c6c6c6;
 }
 
 #review-title span {
-  color: #3f93f3;
+  color: #D9CC17;
 }
 
 #whychoose {
@@ -112,22 +113,23 @@
   font-family: 'Pacifico', cursive;
 }
 
+#how-it-works .my-hover:hover {
+  cursor: pointer;
+  background: #CFD6D4;
+}
+
+#how-it-works .my-hover:hover .how-it-works-box-header .fas {
+  color: #333;
+}
+
 #how-it-works .how-it-works-box {
   margin-top: 30px;
 }
 
 #how-it-works .how-it-works-box .how-it-works-box-header .fas {
-  color: #3f93f3;
+  color: #D9CC17;
   -webkit-transition: color 0.2s;
   transition: color 0.2s;
-}
-
-#how-it-works .how-it-works-box:hover {
-  cursor: pointer;
-}
-
-#how-it-works .how-it-works-box:hover .fas {
-  color: #333;
 }
 
 #blog {
@@ -139,6 +141,6 @@
 }
 
 #blog .title-blog a h1:hover {
-  color: #3f93f3;
+  color: #D9CC17;
 }
 

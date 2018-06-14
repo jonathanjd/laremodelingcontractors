@@ -19041,7 +19041,7 @@ body.gallery-popup-active {
   display: inline-block;
   *zoom: 1;
   *display: inline;
-  fill: #3f93f3;
+  fill: #D9CC17;
   height: 40px;
   margin-right: 5px;
   vertical-align: middle;
@@ -19056,7 +19056,7 @@ body.gallery-popup-active {
   line-height: 1.2;
   padding: 12px 5px;
   position: relative;
-  color: #337ab7 !important;
+  color: #000 !important;
 }
 
 #doityourself a .arrow {
@@ -19130,7 +19130,7 @@ body.gallery-popup-active {
     font-size: 20px
   }
   #doityourself .accordion-title.active {
-    background: #3f93f3;
+    background: #D9CC17;
     border-radius: 3px 3px 0 0;
     color: #fff !important;
   }
@@ -19138,7 +19138,7 @@ body.gallery-popup-active {
     fill: #fff
   }
   #doityourself .accordion-float .nav {
-    border: 1px solid #3f93f3;
+    border: 1px solid #D9CC17;
     overflow-y: auto;
     max-height: 228px
   }
@@ -19200,7 +19200,7 @@ body.gallery-popup-active {
   display: inline-block;
   *zoom: 1;
   *display: inline;
-  fill: #3f93f3;
+  fill: #D9CC17;
   height: 40px;
   margin-right: 5px;
   vertical-align: middle;
@@ -19215,7 +19215,7 @@ body.gallery-popup-active {
   line-height: 1.2;
   padding: 12px 5px;
   position: relative;
-  color: #337ab7 !important;
+  color: #000 !important;
 }
 
 #serviceestimates a .arrow {
@@ -19289,7 +19289,7 @@ body.gallery-popup-active {
     font-size: 20px
   }
   #serviceestimates .accordion-title.active {
-    background: #3f93f3;
+    background: #D9CC17;
     border-radius: 3px 3px 0 0;
     color: #fff !important;
   }
@@ -19297,7 +19297,7 @@ body.gallery-popup-active {
     fill: #fff
   }
   #serviceestimates .accordion-float .nav {
-    border: 1px solid #3f93f3;
+    border: 1px solid #D9CC17;
     overflow-y: auto;
     max-height: 228px
   }

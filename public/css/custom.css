@@ -16,18 +16,18 @@ Author URI : http://www.markups.io/
 }
 
 .main-nav li a:hover {
-    color: #37c6f5;
+    color: #D9CC17;
 }
 
 .navbar-default .navbar-nav>.active>a,
 .navbar-default .navbar-nav>.active>a:hover,
 .navbar-default .navbar-nav>.active>a:focus {
-    color: #37c6f5;
+    color: #D9CC17;
 }
 
 .navbar-default .navbar-nav>li>a:hover,
 .navbar-default .navbar-nav>li>a:focus {
-    color: #37c6f5;
+    color: #D9CC17;
 }
 
 .search-area input[type="text"]:focus:hover {
@@ -402,13 +402,13 @@ Author URI : http://www.markups.io/
 
 .custom-navbar li:hover {
     /*background-color: #4087ab;*/
-    border-top: solid 2px #3f93f3;
-    color: #3f93f3 !important;
+    border-top: solid 2px #D9CC17;
+    color: #D9CC17 !important;
 }
 
 .custom-navbar a:hover {
     background-color: transparent !important;
-    color: #3f93f3 !important;
+    color: #D9CC17 !important;
 }
 
 .custom-navbar a:focus {
@@ -15900,7 +15900,7 @@ button.close {
     padding: 10px;
     font-family: "Open Sans", Arial, Helvetica, sans-serif;
     font-weight: bold;
-    color: #3f93f3;
+    color: #D9CC17;
 }
 
 .phone-style p {
@@ -15909,7 +15909,7 @@ button.close {
 
 .phone-style p>a {
     font-size: 40px !important;
-    color: #3f93f3 !important;
+    color: #D9CC17 !important;
     text-decoration: none;
     cursor: pointer;
 }
@@ -16328,7 +16328,7 @@ div.contact-form-galleries {
     display: inline-block;
     *zoom: 1;
     *display: inline;
-    fill: #3f93f3;
+    fill: #D9CC17;
     height: 40px;
     margin-right: 5px;
     vertical-align: middle;
@@ -16416,7 +16416,7 @@ div.contact-form-galleries {
         font-size: 20px
     }
     #doityourself .accordion-title.active {
-        background: #3f93f3;
+        background: #D9CC17;
         border-radius: 3px 3px 0 0;
         color: #fff
     }
@@ -16424,7 +16424,7 @@ div.contact-form-galleries {
         fill: #fff
     }
     #doityourself .accordion-float .nav {
-        border: 1px solid #3f93f3;
+        border: 1px solid #D9CC17;
         overflow-y: auto;
         max-height: 228px
     }

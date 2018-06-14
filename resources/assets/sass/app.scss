@@ -1,5 +1,6 @@
-$color: #3f93f3;
+$color: #D9CC17;
 $black: #333;
+$black-secundary: #CFD6D4;
 .navbar .navbar-nav {
   display: inline-block;
   float: none;
@@ -37,6 +38,7 @@ $black: #333;
   .my-boxshadow {
     cursor: pointer;
     &:hover {
+      background: $black-secundary;
       box-shadow: 0 0 0 0, 0 4px 20px 0 #c6c6c6;
     }
   }
@@ -105,18 +107,23 @@ $black: #333;
 }
 
 #how-it-works {
+  .my-hover {
+    &:hover {
+      cursor: pointer;
+      background: $black-secundary;
+      .how-it-works-box-header {
+        .fas {
+          color: $black;
+        }
+      }
+    }
+  }
   .how-it-works-box {
     margin-top: 30px;
     .how-it-works-box-header {
       .fas {
         color: $color;
         transition: color 0.2s;
-      }
-    }
-    &:hover {
-      cursor: pointer;
-      .fas {
-        color: $black;
       }
     }
   }
