@@ -20,7 +20,7 @@
           <ul class="nav navbar-nav navbar-center custom-navbar">
 
             <li class="active">
-              <a href="/" class="text-uppercase">Home</a>
+              <a href="{{ url('/') }}" class="text-uppercase">Home</a>
             </li>
             <li class="dropdown">
               <a href="#" class="text-uppercase">About
@@ -31,10 +31,10 @@
               <a href="#" class="text-uppercase">Estimates</a>
             </li>
             <li>
-              <a href="pantry" class="text-uppercase">How To</a>
+              <a href="#" class="text-uppercase">How To</a>
             </li>
             <li>
-              <a href="furniture" class="text-uppercase">Blog</a>
+              <a href="{{ url('/blog') }}" class="text-uppercase">Blog</a>
             </li>
 
           </ul>

@@ -3,7 +3,7 @@
     <div class="row">
       <div class="col-sm-12">
         <h1 class="text-center">Service Estimates</h1>
-        <hr class="my-hr">
+
         <div class="doityourself-body">
 
             @include('include.listservice.list1')

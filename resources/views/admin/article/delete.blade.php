@@ -33,7 +33,7 @@
                 {{ method_field('DELETE') }}
                 <div class="form-group">
                   <p class="text-center text-uppercase"><strong>Do you want delete this article?</strong></p>
-                  <button type="submit" class="btn btn-danger btn-block">Delete</button>
+                  <button type="button" disabled class="btn btn-danger btn-block">Delete</button>
                 </div>
               </form>
 

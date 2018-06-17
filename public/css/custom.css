@@ -15900,7 +15900,7 @@ button.close {
     padding: 10px;
     font-family: "Open Sans", Arial, Helvetica, sans-serif;
     font-weight: bold;
-    color: #D9CC17;
+    color: #333;
 }
 
 .phone-style p {
@@ -15909,7 +15909,7 @@ button.close {
 
 .phone-style p>a {
     font-size: 40px !important;
-    color: #D9CC17 !important;
+    color: #333 !important;
     text-decoration: none;
     cursor: pointer;
 }

@@ -26,6 +26,10 @@
   text-transform: uppercase;
 }
 
+#review-title .icon {
+  fill: #D9CC17;
+}
+
 #review-title .review-title-title {
   color: #333;
 }
@@ -39,9 +43,13 @@
 }
 
 #review-title .my-boxshadow:hover {
-  background: #CFD6D4;
+  background: #D9CC17;
   -webkit-box-shadow: 0 0 0 0, 0 4px 20px 0 #c6c6c6;
           box-shadow: 0 0 0 0, 0 4px 20px 0 #c6c6c6;
+}
+
+#review-title .my-boxshadow:hover .icon {
+  fill: #fff;
 }
 
 #review-title span {
@@ -57,18 +65,18 @@
 }
 
 #whychoose .my-hr {
-  background: #fff;
+  background: #333;
   height: 5px;
   width: 10%;
 }
 
 #whychoose .whychoose-title {
-  color: #fff;
+  color: #333;
 }
 
 #whychoose .whychoose-body .whychoose-item {
   margin-top: 30px;
-  color: #fff;
+  color: #333;
   padding-left: 0;
   padding-left: 0;
 }
@@ -95,18 +103,18 @@
 }
 
 #what-customers-are-saying .my-hr {
-  background: #fff;
+  background: #333;
   height: 5px;
   width: 10%;
 }
 
 #what-customers-are-saying .what-customers-are-saying-title {
-  color: #fff;
+  color: #333;
 }
 
 #what-customers-are-saying .what-customers-are-saying-body .what-customers-are-saying-item {
   margin-top: 30px;
-  color: #fff;
+  color: #333;
 }
 
 #what-customers-are-saying .what-customers-are-saying-body blockquote {
@@ -142,5 +150,38 @@
 
 #blog .title-blog a h1:hover {
   color: #D9CC17;
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  #review-title .my-barra {
+    border-right: 0px solid #fff;
+  }
+
+  #review-title .row .col-sm-12 .row .col-sm-3 {
+    border-left: 3px solid #D9CC17;
+  }
+}
+
+@media (max-width: 767px) {
+  #review-title .my-barra {
+    border-right: 0px solid #fff;
+  }
+
+  #review-title .row .col-sm-12 .row .col-sm-3 {
+    border-left: 3px solid #D9CC17;
+  }
+
+  .navbar {
+    background: rgba(0, 0, 0, 0.7);
+    padding: 0;
+  }
+
+  .navbar .custom-navbar {
+    text-align: center !important;
+  }
+
+  .navbar .navbar-toggle {
+    background-color: #333;
+  }
 }
 

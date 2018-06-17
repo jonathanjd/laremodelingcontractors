@@ -3,11 +3,11 @@
     <div class="row">
       <h1 class="review-title-title text-center">
         Popular Service
-        <hr class="my-hr">
       </h1>
+      <br>
     </div>
     <div class="row">
-      <div class="col-sm-6">
+      <div class="col-sm-12 col-md-6 col-xs-6">
         <div class="row">
           <div class="col-sm-3 text-center my-barra my-boxshadow">
             <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="40px" height="40px" viewBox="0 0 40 40"
@@ -129,7 +129,7 @@
           </div>
         </div>
       </div>
-      <div class="col-sm-6">
+      <div class="col-sm-12 col-md-6 col-xs-6">
         <div class="row">
           <div class="col-sm-3 text-center my-barra my-boxshadow">
             <svg xmlns="http://www.w3.org/2000/svg" id="Layer_1" width="40px" height="40px" data-name="Layer 1" viewBox="0 0 40.96 86.2" class="icon svg replaced-svg"><defs></defs><title>landscaping</title><g id="Page-1"><g id="Artboard-Copy"><g id="landscaping"><path id="Combined-Shape" class="cls-1" d="M32.79,57.5l.05.14L41,80a4.71,4.71,0,1,1-8.85,3.21l-9-24.74a2.07,2.07,0,0,1,.25-2v-1l-4.79,2.4a2.41,2.41,0,0,1-.13.54l-9,24.75A4.71,4.71,0,1,1,.6,80L8.73,57.65V53.81a7.44,7.44,0,0,1,3.85-6.17l2.15-1.06-2.17-1.09A7.48,7.48,0,0,1,8.73,39.3V10.4a11,11,0,0,1,2.9-6.92l2.14-2.11A4.86,4.86,0,0,1,18,.22c1.87.42,3,2,3,4.39V36.39l1,.29V3.17c0-3,3.6-3.85,5.68-1.8l2.14,2.11a11,11,0,0,1,2.9,6.92Zm-7.32-1.83,4.42-.07a2.85,2.85,0,0,1,.81.11V10.39A8.94,8.94,0,0,0,28.42,5L26.28,2.86c-.89-.87-2.12-.58-2.12.31V38.06a1,1,0,0,1-1.33,1l-3.09-.89a1,1,0,0,1-.76-1V4.62c0-1.45-.52-2.15-1.41-2.36a2.79,2.79,0,0,0-2.33.59L13.1,5a8.94,8.94,0,0,0-2.28,5.43V39.3a5.42,5.42,0,0,0,2.69,4.32l4,2a1,1,0,0,1,0,1.87l-4,2a5.37,5.37,0,0,0-2.69,4.3v1.92a2.87,2.87,0,0,1,.86-.13l4.84.06a2.22,2.22,0,0,1,1.19.34L24,52.88a1,1,0,0,1,1.51.93Zm-13.81,2a1.16,1.16,0,0,0-1,.66L2.56,80.71a2.62,2.62,0,1,0,4.92,1.78l9-24.74ZM34.1,82.49A2.62,2.62,0,1,0,39,80.71L30.88,58.35a1.15,1.15,0,0,0-1-.66l-4.82.07Z" transform="translate(-0.31 -0.12)"></path><path id="Oval-43" class="cls-1" d="M26.25,49a2.85,2.85,0,1,1,2.88-2.85A2.86,2.86,0,0,1,26.25,49Zm0-2.09a.76.76,0,1,0-.79-.76A.77.77,0,0,0,26.25,46.93Z" transform="translate(-0.31 -0.12)"></path></g></g></g></svg>

@@ -6,7 +6,7 @@
         <hr class="my-hr">
       </div>
       <div class="what-customers-are-saying-body">
-        <div class="col-sm-4 what-customers-are-saying-item">
+        <div class="col-xs-4 col-sm-4 what-customers-are-saying-item">
           <p class="text-center">
             <img src="{{ asset('img/customer1.png') }}" class="image-responsive" alt="">
           </p>
@@ -14,7 +14,7 @@
           <blockquote>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere laborum, fuga.
           </blockquote>
         </div>
-        <div class="col-sm-4 what-customers-are-saying-item">
+        <div class="col-xs-4 col-sm-4 what-customers-are-saying-item">
           <p class="text-center">
             <img src="{{ asset('img/customer2.png') }}" class="image-responsive" alt="">
           </p>
@@ -22,7 +22,7 @@
           <blockquote>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere laborum, fuga.
           </blockquote>
         </div>
-        <div class="col-sm-4 what-customers-are-saying-item">
+        <div class="col-xs-4 col-sm-4 what-customers-are-saying-item">
           <p class="text-center">
             <img src="{{ asset('img/customer3.png') }}" class="image-responsive" alt="">
           </p>

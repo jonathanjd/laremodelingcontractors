@@ -8,4 +8,11 @@ class Category extends Model
 {
     //
     protected $fillable = ['name', 'permalink', 'status'];
+
+    public function articles()
+    {
+        return $this->belongsToMany(Article::class);
+    }
+
+
 }

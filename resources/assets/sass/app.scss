@@ -29,6 +29,9 @@ $black-secundary: #CFD6D4;
 }
 
 #review-title {
+  .icon {
+    fill: #D9CC17;
+  }
   .review-title-title {
     color: $black;
   }
@@ -38,8 +41,12 @@ $black-secundary: #CFD6D4;
   .my-boxshadow {
     cursor: pointer;
     &:hover {
-      background: $black-secundary;
-      box-shadow: 0 0 0 0, 0 4px 20px 0 #c6c6c6;
+      background: $color;
+      .icon {
+        fill: #fff;
+      }
+      box-shadow: 0 0 0 0,
+      0 4px 20px 0 #c6c6c6;
     }
   }
   span {
@@ -54,17 +61,17 @@ $black-secundary: #CFD6D4;
   margin-bottom: 30px;
   padding-top: 40px;
   .my-hr {
-    background: #fff;
+    background: #333;
     height: 5px;
     width: 10%;
   }
   .whychoose-title {
-    color: #fff;
+    color: #333;
   }
   .whychoose-body {
     .whychoose-item {
       margin-top: 30px;
-      color: #fff;
+      color: #333;
       padding-left: 0;
       padding-left: 0;
       .my-text-size {
@@ -88,17 +95,17 @@ $black-secundary: #CFD6D4;
   margin-bottom: 30px;
   padding-top: 40px;
   .my-hr {
-    background: #fff;
+    background: #333;
     height: 5px;
     width: 10%;
   }
   .what-customers-are-saying-title {
-    color: #fff;
+    color: #333;
   }
   .what-customers-are-saying-body {
     .what-customers-are-saying-item {
       margin-top: 30px;
-      color: #fff;
+      color: #333;
     }
     blockquote {
       font-family: 'Pacifico', cursive;
@@ -142,3 +149,65 @@ $black-secundary: #CFD6D4;
     }
   }
 }
+
+// Large Devices
+@media (min-width:1200px) {
+  // OK
+}
+
+//Medium Devices
+@media (min-width: 992px) and (max-width: 1199px) {
+  // Ok
+}
+
+//Small Devices
+@media (min-width: 768px) and (max-width: 991px) {
+  #review-title {
+    .my-barra {
+      border-right: 0px solid #fff;
+    }
+    .row {
+      .col-sm-12 {
+        .row {
+          .col-sm-3 {
+            border-left: 3px solid $color;
+          }
+        }
+      }
+    }
+  }
+}
+
+// Extra Small
+@media (max-width:767px) {
+  #review-title {
+    .my-barra {
+      border-right: 0px solid #fff;
+    }
+    .row {
+      .col-sm-12 {
+        .row {
+          .col-sm-3 {
+            border-left: 3px solid $color;
+          }
+        }
+      }
+    }
+  }
+  .navbar {
+    background: rgba(0, 0, 0, .7);
+    padding: 0;
+    .custom-navbar {
+      text-align: center !important;
+    }
+    .navbar-toggle {
+      background-color: #333;
+    }
+  }
+}
+
+// Extra Small
+@media (max-width:480px) {}
+
+// Extra Small
+@media (max-width:320px) {}
