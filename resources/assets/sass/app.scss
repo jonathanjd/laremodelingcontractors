@@ -137,6 +137,7 @@ $black-secundary: #CFD6D4;
 }
 
 #blog {
+  background-color: white;
   padding-top: 0;
   .title-blog {
     a {
@@ -148,19 +149,91 @@ $black-secundary: #CFD6D4;
       }
     }
   }
+  .blog-header-title {
+    border-left: 10px solid $color;
+    text-transform: uppercase;
+    padding: 10px;
+    color: white;
+    background-color: #333;
+  }
+  .btn-custom {
+    background-color: #333;
+    color: white !important;
+    border-bottom: 1px solid $color;
+    -webkit-box-shadow: 7px 7px 0px -4px rgba(217, 204, 23, 1);
+    -moz-box-shadow: 7px 7px 0px -4px rgba(217, 204, 23, 1);
+    box-shadow: 7px 7px 0px -4px rgba(217, 204, 23, 1);
+    border-radius: 0;
+    &:hover {
+      background-color: white;
+      color: #333 !important;
+      border: 1px solid #333;
+    }
+  }
+  .blog-article-item {
+    padding: 5px;
+    margin: 5px;
+  }
+  .paginate {
+    .pagination {
+      .active {
+        span {
+          background-color: #333;
+          border-color: #333;
+        }
+      }
+    }
+  }
+}
+
+#article {
+  .article-header-title {
+    h1 {
+      font-size: 38px;
+    }
+    background: #333;
+    border-left: 30px solid $color;
+    color: white;
+    text-align: center;
+    padding: 50px;
+  }
+  .article-body {
+    margin-top: 30px;
+    margin-bottom: 30px;
+    font-size: 1.70em;
+    line-height: 1.4em;
+  }
+  .article-recommended {
+    h2 {
+      position: relative;
+      text-align: center;
+      text-transform: uppercase;
+      &:before {
+        background: #333;
+        content: "";
+        display: block;
+        height: 1px;
+        position: absolute;
+        top: 50%;
+        width: 100%;
+      }
+      span {
+        background: #fff;
+        padding: 0 15px;
+        position: relative;
+        z-index: 1;
+      }
+    }
+  }
 }
 
 // Large Devices
 @media (min-width:1200px) {
   // OK
-}
-
-//Medium Devices
+} //Medium Devices
 @media (min-width: 992px) and (max-width: 1199px) {
   // Ok
-}
-
-//Small Devices
+} //Small Devices
 @media (min-width: 768px) and (max-width: 991px) {
   #review-title {
     .my-barra {
@@ -176,9 +249,7 @@ $black-secundary: #CFD6D4;
       }
     }
   }
-}
-
-// Extra Small
+} // Extra Small
 @media (max-width:767px) {
   #review-title {
     .my-barra {
@@ -204,9 +275,7 @@ $black-secundary: #CFD6D4;
       background-color: #333;
     }
   }
-}
-
-// Extra Small
+} // Extra Small
 @media (max-width:480px) {}
 
 // Extra Small

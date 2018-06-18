@@ -141,6 +141,7 @@
 }
 
 #blog {
+  background-color: white;
   padding-top: 0;
 }
 
@@ -150,6 +151,81 @@
 
 #blog .title-blog a h1:hover {
   color: #D9CC17;
+}
+
+#blog .blog-header-title {
+  border-left: 10px solid #D9CC17;
+  text-transform: uppercase;
+  padding: 10px;
+  color: white;
+  background-color: #333;
+}
+
+#blog .btn-custom {
+  background-color: #333;
+  color: white !important;
+  border-bottom: 1px solid #D9CC17;
+  -webkit-box-shadow: 7px 7px 0px -4px #d9cc17;
+  box-shadow: 7px 7px 0px -4px #d9cc17;
+  border-radius: 0;
+}
+
+#blog .btn-custom:hover {
+  background-color: white;
+  color: #333 !important;
+  border: 1px solid #333;
+}
+
+#blog .blog-article-item {
+  padding: 5px;
+  margin: 5px;
+}
+
+#blog .paginate .pagination .active span {
+  background-color: #333;
+  border-color: #333;
+}
+
+#article .article-header-title {
+  background: #333;
+  border-left: 30px solid #D9CC17;
+  color: white;
+  text-align: center;
+  padding: 50px;
+}
+
+#article .article-header-title h1 {
+  font-size: 38px;
+}
+
+#article .article-body {
+  margin-top: 30px;
+  margin-bottom: 30px;
+  font-size: 1.70em;
+  line-height: 1.4em;
+}
+
+#article .article-recommended h2 {
+  position: relative;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+#article .article-recommended h2:before {
+  background: #333;
+  content: "";
+  display: block;
+  height: 1px;
+  position: absolute;
+  top: 50%;
+  width: 100%;
+}
+
+#article .article-recommended h2 span {
+  background: #fff;
+  padding: 0 15px;
+  position: relative;
+  z-index: 1;
 }
 
 @media (min-width: 768px) and (max-width: 991px) {

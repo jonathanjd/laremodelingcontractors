@@ -1,18 +1,17 @@
-@extends('layouts.app') @section('title', 'Contractor Los Angeles - Remodeling: Kitchen, Bathroom, Home Additions In Los
-Angeles') @section('content')
+@extends('layouts.app')
+@section('title', 'Contractor Los Angeles - Blog')
+@section('description', 'Company Name - Blog')
+@section('keyword', 'Blog')
+@section('author', 'Company Name')
+@section('content')
 
 <!-- Toolbar Call Us Today Start -->
-<div class="background-nopadding" style="background: #333">
-  <div class="container">
-    <p>
-      <a href="#">Contractors Registration</a>
-    </p>
-  </div>
-</div>
+@include('include.toolbarcallus')
 <!-- Toolbar Call Us Today End -->
 
 <!-- Header Start -->
 <div class="container">
+
   <div class="row">
     <div class="col-md-3 col-sm-6 col-xs-12">
       <a href="/">
@@ -35,35 +34,48 @@ Angeles') @section('content')
 @include('include.navbar')
 <!-- NavBar End -->
 
-<div class="container">
-  <div class="row">
-    <div class="col-md-12">
-
-      @foreach ($categoryArticles->articles as $article)
-      <div class="row">
-        <article>
-          <div class="col-md-3">
-            <figure>
-              <img class="img-responsive img-thumbnail" src="{{ asset('img/articles/' . $article->img_name) }}" alt="">
-            </figure>
-          </div>
-          <div class="col-md-9">
-            <a href="{{ route('showArticle',[$article->categories[0]->permalink, $article->permalink]) }}"><h2>{{ $article->title }}</h2></a>
-          <p>Publicado por {{ $article->user->name }}</p>
-            <div>
-              {!! str_limit($article->body, 200) !!}
-            </div>
-            <p>
-              <a href="{{ route('showArticle',[$article->categories[0]->permalink, $article->permalink]) }}" class="btn btn-primary">Read More</a>
-            </p>
-          </div>
-        </article>
+<!-- Blog Start -->
+<section id="blog">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        <h2 class="blog-header-title">Blog</h2>
       </div>
-      @endforeach
+    </div>
+    <div class="row">
+      <div class="col-md-12">
+
+        @foreach ($categoryArticles as $article)
+        <div class="row blog-article-item">
+          <article>
+            <div class="col-md-3">
+              <figure>
+                <img class="img-responsive" src="{{ asset('img/articles/' . $article->img_name) }}" alt="">
+              </figure>
+            </div>
+            <div class="col-md-9">
+              <a href="{{ route('showArticle',[$article->categories[0]['permalink'], $article->permalink]) }}"><h2>{{ $article->title }}</h2></a>
+            <p>Publicado by <strong class="text-uppercase">{{ $article->user->name }}</strong></p>
+            <p>Date: <strong>{{ date("d/m/Y", strtotime($article->created_at)) }}</strong></p>
+              <div>
+                {!! str_limit($article->body, 200) !!}
+              </div>
+              <p>
+                <a href="{{ route('showArticle',[$article->categories[0]['permalink'], $article->permalink]) }}" class="btn btn-custom">Read More</a>
+              </p>
+            </div>
+          </article>
+        </div>
+        @endforeach
+
+        <div class="paginate">
+          {{ $categoryArticles->links() }}
+        </div>
+      </div>
     </div>
   </div>
-</div>
-
+</section>
+<!-- Blog End -->
 <!-- Footer Section Start -->
 @include('include.footer')
 <!-- Footer Section End -->

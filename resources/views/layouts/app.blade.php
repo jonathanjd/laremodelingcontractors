@@ -8,9 +8,9 @@
     <title>@yield('title')</title>
     <!-- CSRF Token -->
     <meta name="csrf-token" content="{{ csrf_token() }}">
-    <meta name="description" content="We are Los Angeles Contractors who have been remodeling kitchens, bathrooms, home additions for more than 20 years.">
-    <meta name="keywords" content="">
-    <meta name="author" content="">
+    <meta name="description" content="@yield('description', 'We are Los Angeles Contractors who have been remodeling kitchens, bathrooms, home additions for more than 20 years.')">
+    <meta name="keywords" content="@yield('keyword')">
+    <meta name="author" content="@yield('author')">
     <!-- Styles -->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.6-rc.0/css/select2.min.css" rel="stylesheet" />

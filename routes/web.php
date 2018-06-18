@@ -19,6 +19,23 @@ Route::get('/', function () {
     return view('welcome')->with('categories', $categories);
 });
 
+Route::get('about', function () {
+    return view('about');
+})->name('about');
+
+Route::get('estimates', function () {
+    return view('estimates');
+})->name('estimates');
+
+Route::get('how-to', function () {
+    return view('howto');
+})->name('howto');
+
+Route::get('contractors-registration', function () {
+    return view('contractorsRegistration');
+})->name('contractorsRegistration');
+
+
 Route::group(['prefix' => 'admin'], function () {
     Route::get('/dashboard', 'AdminController@dashboard')->name('dashboard');
     Route::resource('category', 'Category\CategoryController', ['only' => ['index', 'create', 'edit', 'store', 'update']]);
@@ -34,9 +51,15 @@ Route::get('/logout', 'Auth\LoginController@logout')->name('logout');
 Route::get('/{permalink}/{article}', function ($permalink, $article) {
 
     $article = Article::where('permalink', $article)->first();
+
+    $articleRecommended = Article::orderByRaw('RAND()')->with('categories')->whereHas('categories', function ($query) use ($permalink) {
+        $query->where('name', $permalink);
+    })->where('title', '!=', $article)->take(3)->get();
+
+
     if (strtolower($article->categories[0]->name) == $permalink) {
         # code...
-        return view('articleShow')->with('article', $article);
+        return view('articleShow')->with('article', $article)->with('articleRecommended', $articleRecommended);
     } else {
         # code..
         return redirect()->route('404');
@@ -44,12 +67,15 @@ Route::get('/{permalink}/{article}', function ($permalink, $article) {
 
 })->name('showArticle');
 
-Route::get('404', function() {
+Route::get('404', function () {
     return view('404');
 })->name('404');
 
 Route::get('/{permalink}', function ($permalink) {
-    $categoryArticles = Category::where('permalink', $permalink)->orderBy('id', 'desc')->first();
+    $categoryArticles = Article::with('categories')->whereHas('categories', function ($query) use ($permalink) {
+        $query->where('name', $permalink);
+    })->orderBy('id', 'desc')->paginate(5);
+
     return view('category')->with('categoryArticles', $categoryArticles);
 })->name('myCategory');
 
