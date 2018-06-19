@@ -187,9 +187,7 @@
 }
 
 #article .article-header-title {
-  background: #333;
-  border-left: 30px solid #D9CC17;
-  color: white;
+  color: #333;
   text-align: center;
   padding: 50px;
 }
@@ -198,11 +196,25 @@
   font-size: 38px;
 }
 
-#article .article-body {
+#article .article-content {
   margin-top: 30px;
   margin-bottom: 30px;
   font-size: 1.70em;
   line-height: 1.4em;
+}
+
+#article .article-content h2 {
+  text-transform: uppercase;
+  font-size: 1.5em;
+}
+
+#article .article-content h3 {
+  text-transform: uppercase;
+  font-size: 1.1em;
+}
+
+#article .article-content a {
+  color: #428bca !important;
 }
 
 #article .article-recommended h2 {

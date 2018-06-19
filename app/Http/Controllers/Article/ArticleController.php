@@ -145,7 +145,7 @@ class ArticleController extends Controller
             $article->img_url = $path;
             $article->img_name = $name;
             $article->keywords = $request->keywords;
-            $article->status = 'preview';
+            $article->status = 'active';
             $article->user_id = auth()->user()->id;
             $article->save();
             $article->categories()->sync($request->category);
@@ -157,7 +157,7 @@ class ArticleController extends Controller
             $article->seo_title = $request->seo_title;
             $article->seo_description = $request->seo_description;
             $article->keywords = $request->keywords;
-            $article->status = 'preview';
+            $article->status = 'active';
             $article->user_id = auth()->user()->id;
             $article->save();
             $article->categories()->sync($request->category);

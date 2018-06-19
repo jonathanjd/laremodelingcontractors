@@ -50,7 +50,7 @@
           <article>
             <div class="col-md-3">
               <figure>
-                <img class="img-responsive" src="{{ asset('img/articles/' . $article->img_name) }}" alt="">
+              <img class="img-responsive" src="{{ asset('img/articles/' . $article->img_name) }}" alt="{{ $article->title }}">
               </figure>
             </div>
             <div class="col-md-9">

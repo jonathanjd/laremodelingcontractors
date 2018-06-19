@@ -2,8 +2,8 @@
 <footer>
   <div class="container-fluid" style="background: #333">
     <div class="follow-us">
-      <div class="col-md-12">
-        <div class="copyright">
+      <div class="col-md-12 text-center">
+        <div class="copyright container">
           <p>Privacy policy © 2018 LA Remodeling Contractors | All Rights Reserved
             <br>
           </p>

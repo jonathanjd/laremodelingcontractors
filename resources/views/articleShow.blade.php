@@ -1,5 +1,5 @@
 @extends('layouts.app')
-@section('title', $article->categories[0]['name'] . ' - ' . $article->seo_title)
+@section('title', $article->seo_title)
 @section('description', $article->seo_description)
 @section('keyword', $article->keywords)
 @section('author', 'Company Name')
@@ -48,7 +48,7 @@
             <p>Publicado por <strong>{{ $article->user->name }}</strong></p>
             <p>Date: <strong>{{ date('d/m/Y', strtotime($article->created_at)) }}</strong></p>
             <figure>
-              <img class="img-responsive img-circle center-block" height="500" width="500" src="{{ asset('img/articles/' . $article->img_name) }}" alt="">
+              <img class="img-responsive center-block" height="500" width="500" src="{{ asset('img/articles/' . $article->img_name) }}" alt="{{ $article->title }}">
             </figure>
           </div>
         </div>
@@ -57,7 +57,7 @@
     <div class="container">
       <div class="row">
         <div class="col-md-12">
-          <div class="article-body">
+          <div class="article-content">
             {!! $article->body !!}
           </div>
         </div>
@@ -73,7 +73,7 @@
           <div class="col-md-4">
             <a href="{{ route('showArticle',[$article->categories[0]['permalink'], $article->permalink]) }}">
               <figure>
-              <img class="img-responsive img-thumbnail center-block" height="100" width="400" src="{{ asset('img/articles/'. $article->img_name) }}" alt="{{ $article->titl }}">
+              <img class="img-responsive img-thumbnail center-block" height="100" width="400" src="{{ asset('img/articles/'. $article->img_name) }}" alt="{{ $article->title }}">
               </figure>
               <h3 class="text-center">{{ $article->title }}</h3>
             </a>

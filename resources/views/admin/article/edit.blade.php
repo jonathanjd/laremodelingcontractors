@@ -71,9 +71,7 @@
           </div>
           <div class="form-group {{ $errors->has('seo_description') ? 'has-error': '' }}">
             <label for="seo_description">Seo Description</label>
-            <textarea name="seo_description" cols="10" rows="5" class="form-control" placeholder="Seo Description Hasta 30 Words(1 o 2 Frases)(Palabras Claves)">
-              {!! $article->seo_description !!}"
-            </textarea>
+            <textarea name="seo_description" class="form-control" placeholder="Seo Description Hasta 30 Words(1 o 2 Frases)(Palabras Claves)">{!! $article->seo_description !!}</textarea>
             @if ($errors->first('seo_description'))
             <span class="help-block">{{ $errors->first('seo_description') }}</span>
             @endif
